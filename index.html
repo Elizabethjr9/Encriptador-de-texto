@@ -1,11 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./CSS/ressect.css">
+    <link rel="stylesheet" href="./CSS/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
+    <header>
+       <div class="header">
+         <img class="Logo" src="imagenes/Logo.png" alt="">
+        </div>
+    </header>
     
+    <div class="container">
+        <div class="Encriptador">
+            <textarea id="textoInicial" name="texto" class="texto"
+              placeholder= "Ingresa el texto aquí"></textarea>
+         <div class="terminos">
+            <div class="termino">
+                <img class="exclamacion" src="./imagenes/Group.png" alt="">
+                <span class="info">Solo letras minúsculas y sin acentos.</span>
+            </div>
+            
+            <div class="botones">
+                <button id="boton__encriptador" class="boton__encriptador" type="button">
+                Encriptar</button>
+                <button id="boton__desencriptador" type="button" class="boton__desencriptador">
+                Desencriptar</button>
+            </div>
+         </div>    
+        </div>
+
+        <div class="Encriptado" id="encriptado">
+            <img src="imagenes/Muñeco.png" alt="Ningún mensaje fue encontrado. Ingresa el texto que desees encriptar o desencriptar." class="img" id="img"/>
+         <div class="mensaje__encriptado" id="mensaje__encriptado">
+            <textarea class="mensaje" name="mensaje" id="mensaje" placeholder="Ningún mensaje fue encontrado"></textarea>
+            <p id="textoInfo" class="info">Ingresa el texto que deseas encriptar o desencriptar.</p>
+            <button id="boton__copiar" class="boton__copiar boton__ocultar">Copiar</button>
+         </div>
+        </div>
+    </div>
+    <footer class="footer ">
+        <p class="creador">Create by Elizabeth Julio
+        </p>
+    </footer>
+<script src="js/index.js"></script>
 </body>
 </html>
